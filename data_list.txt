@@ -1,0 +1,5 @@
+[sbrown@example.org]
+[Email:johnwhite@example.com, Company Name: Stanton and Sons, Password:Test1234$$]
+[Email:petersonelizabeth@example.org, Company Name: Weber, Thompson and Parker, Password:Test1234$$]
+[Email:christopherwagner@example.com, Company Name: Bowers-Ortega, Password:Test1234$$]
+[Email:yholland@example.com, Company Name: Foster, Booker and Williams, Password:Test1234$$]
