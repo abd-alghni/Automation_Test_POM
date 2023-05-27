@@ -82,7 +82,12 @@ class SignUp:
     def click_continue_button(self):
         self.driver.find_element(*self.CONTINUE_BUTTON).click()
 
-    def store_data(self,email,company_name,password):
-        with open(r'data_list.txt','a') as abood :
-               new_record='Email:'+email+', Company Name: '+company_name+', Password:'+password
-               abood.write(f"[{new_record}]\n")
+    def store_email(self,email):
+        with open(r'emails.txt','a') as abood :
+               new_record=email
+               abood.write(f"{new_record}\n")
+
+    # def store_data(self,email,company_name,password):
+    #     with open(r'data_list.txt','a') as abood :
+    #            new_record='Email:'+email+', Company Name: '+company_name+', Password:'+password
+    #            abood.write(f"[{new_record}]\n")

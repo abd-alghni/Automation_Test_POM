@@ -23,8 +23,8 @@ class Login_TestCases():
 
         #Happy Path Registration
         
-        #email=self.login.read_data()
-        self.login.enter_email('sbrown@example.org')
+        email=self.login.read_data()
+        self.login.enter_email(email)
         password='Test1234$$'
         self.login.enter_password(password)
         sleep(1)

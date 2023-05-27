@@ -40,7 +40,7 @@ class SignUp_TestCases():
         sleep(1)
         self.signup.click_register_button()  
         sleep(1)
-        self.signup.store_data(email,company_name,password)
+        self.signup.store_email(email)
         sleep(1)
         self.signup.click_continue_button()
         sleep(10)

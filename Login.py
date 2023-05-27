@@ -22,9 +22,16 @@ class Login:
         self.driver = webdriver.Chrome()
         self.driver.get(login_url)
 
-    # def read_data(self):
-    #     with open(r'data_list.txt','r') as abood :
-    #            abood.read()
+    def read_data(self):
+        #with open(r'data_list.txt','r') as abood :
+               #abood.read()
+               file = open('emails.txt', 'r')
+               # Read the email and password from the file
+               lines = file.readlines()
+               email = lines[1].strip()
+               return email
+               # password = lines[1].strip()
+
 
     def enter_email(self, email):
         self.driver.find_element(*self.EMAIL_FIELD).send_keys(email) 
